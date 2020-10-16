@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1</title>
+    <script type="text/javaScript">
+   /* var numero;
+    numero=1;
+    if (numero=="1")//son iguales porque el == compara pero no por tipos entonces habria que usar === para 
+    //comparar por tipo
+    {
+        alert("Son iguales");
+    }else
+    {
+        alert("No son iguales");
+    }
+    Saludar(1,2);//Se puede llamar una funcion sin todos los parametros
+    function Saludar(a,b,c)
+    {
+        alert("Hola mundo "+a);
+        alert(c);
+    }*/
+    function Saludar() 
+    {
+        var input=document.getElementById("txt");
+        alert("Hola veci "+input.value);
+        input.value="Caramelo criminal";
+    }
+    </script>
+</head>
+<body>
+    <h1>ACA SE PONE EL TITULO</h1>
+    <h2 style="color: brown; font-style: oblique; font-size: 1rem;">ESTE ES MI LABORATORIO</h2>
+    <br />
+    <br />
+    <hr />
+    <!--Asi se comenta-->
+    <p style="color:green; background-color: black; font-size: 20px;">Es mala practica poner mas de un h1 en html, va ser que google ponga nuestra pagina en los pagina 10 </p>
+    <table border="1"> 
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>Michell</td>
+            ><td>Quintero</td>
+        </tbody>
+        <!--poner un renglon abajo-->
+        <tfoot>
+
+        </tfoot>
+    </table>
+    <input type="text" id="txt" name="txt1" value="cortico"/>
+    <br />
+    <input type="text" id="txt2" name="txt1" maxlength="8" size="35" value="Largote"/><!--maxlength es la cant de letras-->
+    <input type="password"/>
+    <input type="file"/>
+    <input type="button" id="btn" name="btn1" value="SALUDAR" onclick="Saludar()"/>
+    <br />
+    <input type="checkbox" value="0" checked/> opcion 0 <!--se puede poner despues-->
+    <br />
+    <!--o antes-->opcion 1<input type="checkbox" value="1" />
+    <br />
+    opcion 2<!--o asi tambien-->
+    <input type="checkbox" value="2" />
+    <br />
+    <input type="radio" name="Sexo" value="Femenino"/>Femenino
+    <input type="radio" name="Sexo" value="Masculino"/>Masculino
+    <input type="hidden" id="txt" name="txt1" value="cortico"/><!--Para ocultar info en pantalla-->
+    <br />
+    <a href="./recordar.html">No recuerdo la contraseña</a>
+    <!--<audio controls>
+        <source> src=""
+    </audio>-->
+    <textarea cols="5" rows="5"wrap></textarea><!--wrap palabras largas una bajo otra-->
+    ><br />
+    <!--Este seria el combobox en html-->
+    <select><!--size="2" size para ver cuantas opciones por combobox-->
+        <optgroup label="Generos comunes">
+            <option value="0">fenemino</option>
+            <option value="1">masculino</option>
+        </optgroup>
+        <optgroup label="Nuevos generos">
+            <option value="0">Trasgenero</option>
+            <option value="1">Otro</option>
+        </optgroup>
+
+    </select>
+
+</body>
+</html>

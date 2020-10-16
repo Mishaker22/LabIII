@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Parcial</title>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/function.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="contenedor" id="div" hidden>
+        <div class="ContCerrar">
+            <input type="button" value="X" id="btnCerrar"/>
+        </div>
+        <label for="name">Nombre</label><br/>
+        <input type="text" name="nombre" id="name" class="inputSinError inputConError" placeholder="Ingrese su nombre"><br/>
+        <label for="lastname">Apellido</label><br/>
+        <input type="text" name="apellido" id="lName" class="inputSinError inputConError" placeholder="Ingrese su apellido"><br/>
+        <label for="date">Fecha</label><br/>
+        <input type="date" name="Fecha" id="dates" max="" class="inputSinError inputConError" ><br/>
+        <div>
+            <input type="radio" id="sF" name="Sexo" value="Female"/>Female
+            <input type="radio" id="sM" name="Sexo" value="Male"/>Male
+        </div>
+        <div class="ContBotones">
+            <input type="button" value="Modificar" id="btnModificar"/>
+            <input type="button" value="Eliminar" id="btnEliminar"/>
+        </div>
+        
+    </div>
+    <div class="Tabla">
+        <div id="spinner" class="Spinner" hidden>
+            <label for="spinner" id="label" style="color: wheat;"></label>
+            <div class="gif">
+            </div>
+        </div>
+        <h2>Lista de personas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha</th>
+                <th>Sexo</th>
+            </tr>
+        </thead>
+        <tbody id="tbDatos">
+            
+        </tbody>
+    </table>
+    </div>
+    
+
+</body>
+</html>

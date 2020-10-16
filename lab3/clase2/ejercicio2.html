@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <script src="./funciones.js"></script>
+    <script src="./ejercicio2.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <input type="button" id="btnAbrirContenedor"/>
+    <div class="contenedor" id="div" hidden>
+        <div class="ContCerrar">
+            <input type="button" value="X" id="btnCerrar"/>
+        </div>
+        <label for="name">Nombre</label><br/>
+        <input type="text" name="nombre" id="name" class="inputSinError inputConError" placeholder="Ingrese su nombre"><br/>
+        <label for="lastname">Apellido</label><br/>
+        <input type="text" name="apellido" id="lName" class="inputSinError inputConError" placeholder="Ingrese su apellido"><br/>
+        <div class="ContBotones">
+            <input type="button" value="Guardar" id="btnGuardar"/>
+            <input type="button" value="Cancelar" id="btnCancelar"/>
+        </div>
+        
+    </div>
+    <h2>Lista de personas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody id="tbDatos">
+            <tr>
+                <td>Michell</td>
+                <td>Quintero Hernandez</td>
+                <td><a href="#">Modificar</a></td>
+            </tr>
+            <tr>
+                <td>Nicolas</td>
+                <td>Herran</td>
+                <td><a href="#">Borrar</a></td>
+            </tr>
+            <tr>
+                <td>Danis</td>
+                <td>Ladino</td>
+                <td><a href="#">Modificar</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

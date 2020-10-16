@@ -1,0 +1,82 @@
+Matias Ramos19:55
+https://github.com/mramos88/apiLabIIIPersonasJson
+Luciano Ravainera19:57
+sisi
+Mariano Garcia Mastronardi19:58
+no  no
+gustavo Yaggi19:58
+por mi parte ninguna duda
+Matias Ramos20:20
+            peticionHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+Matias Ramos20:21
+http://localhost:3000/loginUsuario
+Luciano Ravainera20:25
+como es el imput de tipo fecha?
+input*
+Luciano Ravainera20:26
+gracias!
+Santi Gonzalez20:35
+para levantar el json del servidor hago un get no?
+Matias Ramos20:36
+sisi
+http://localhost:3000/personas
+Matias Ramos20:38
+http://localhost:3000/nuevaPersona <--- POST
+Bruno Goffredo20:57
+Yo todavia no!
+Matias Ramos20:57
+bien bien
+Luciano Ravainera20:57
+yo si
+me falta el post
+Matias Ramos20:58
+bien, si necesitas una mano decime 
+Santi Gonzalez21:05
+joya ahi cargue los datos en una tabla
+Matias Ramos21:07
+Buenisimo, trata de hacer el post 
+si necesitas una mano avisa
+Santi Gonzalez21:08
+dale gracias
+Ezequiel Archilla21:13
+tenemos que usar el post para dar de alta nuevas rows en la tabla no?
+Matias Ramos21:18
+claro
+tenes que usar el post para dar de alta la persona y despues agregar una nueva fila 
+osae el tr 
+Ezequiel Archilla21:18
+ahh dale, gracias
+Nahue Gonzalez21:25
+De ese responseText es de donde sacamos el json con los datos de los usuarios no?
+Luciano Ravainera21:25
+despues de hacer el peticionHttp.send(); hace como un return
+Nahue Gonzalez21:26
+Ah perfecto, ese send es como que se lo asigno a una var por ejemplo?
+Matias Ramos21:26
+como ?
+la respuesta te llega en el callback cuando el server resulve 
+cuando hace el send, todavia no sabes si funciono o no.
+Nahue Gonzalez21:27
+Claro, y yo en que momento tengo que agarrar el json con usuarios?
+Matias Ramos21:27
+cuanda tengas el ok del servidor
+en el callback
+Santi Gonzalez21:28
+yo hice una funcion respuestaGet que seria el callback, ahi dentro hice el JSON.parse y despues lo printee en la lista
+Matias Ramos21:28
+fijate que la respuesta del servidor sea ok
+Nahue Gonzalez21:28
+AH claro, si me da ese ok del 200, ese responseText vendría a ser el return con el json o tiré cualquiera?
+Matias Ramos21:28
+{'respuesta': 'ok'}
+{'respuesta': 'error'}
+Luciano Ravainera21:29
+a mi me anda pero tengo q darle f5 para q aparezca actualizada la lista
+ahhh ya entendi
+ahi me fijo
+Santi Gonzalez21:30
+yo tambien tengo que recargar
+Luciano Ravainera21:31
+si lo tengo q modificar en el callback
+yo lo tengo asi tambien
+cuando recargo me aparece todo 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <script src="./funciones.js"></script>
+    <script src="./ejercicio2.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <input type="text" id="txtSubmit">
+    <input type="button" value="Submit" id="btnSubmit"/>
+    <input type="button" id="btnAbrirContenedor"/>
+    <div class="contenedor" id="div" hidden>
+        <div class="ContCerrar">
+            <input type="button" value="X" id="btnCerrar"/>
+        </div>
+        <label for="name">Nombre</label><br/>
+        <input type="text" name="nombre" id="name" class="inputSinError inputConError" placeholder="Ingrese su nombre"><br/>
+        <label for="lastname">Apellido</label><br/>
+        <input type="text" name="apellido" id="lName" class="inputSinError inputConError" placeholder="Ingrese su apellido"><br/>
+        <label for="tel">Telefono</label><br/>
+        <input type="text" name="Telefono" id="tel" class="inputSinError inputConError" placeholder="Ingrese su telefono"><br/>
+        <label for="date">Fecha</label><br/>
+        <input type="date" name="Fecha" id="dates" class="inputSinError inputConError" ><br/>
+        <div class="ContBotones">
+            <input type="button" value="Guardar" id="btnGuardar"/>
+            <input type="button" value="Cancelar" id="btnCancelar"/>
+        </div>
+        
+    </div>
+    <h2>Lista de personas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody id="tbDatos">
+            
+        </tbody>
+    </table>
+
+</body>
+</html>
