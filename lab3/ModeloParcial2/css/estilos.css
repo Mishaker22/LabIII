@@ -1,7 +1,7 @@
 body{
     font-family: sans-serif;
     font-size: 14px;
-    background-color: rgb(71, 120, 212);
+    background-color: rgb(129, 138, 155);
     color: white;
 }
 
@@ -42,16 +42,14 @@ span{
     margin-right: 25px;
 }
 
-.buttonAlta{
-    width: 10%;
-}
+
 
 .alignCenter{
     text-align: center;
 }
 
 #divContainer{
-    background-color: rgb(230, 228, 228);
+    background-color: rgb(233, 222, 202);
     color: black;
     width: 45%;
     border-radius: 4px;
@@ -61,8 +59,12 @@ span{
     left: 25%;
     top: 20%;
     margin: auto;
+    
 }
-
+#btnAgregar
+{
+    background-color: rgb(41, 216, 18);
+}
 
 .selbox{
     width: 92%;
@@ -79,7 +81,22 @@ span{
     margin-top: 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.textBoxIndex{
+    width: 6%;
+    font-size: 14px;
+    height: 32px;    
+    border-color: rgb(161, 161, 161);
+    border-radius: 4px;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+}
 .textBox{
     width: 90%;
     font-size: 14px;
@@ -98,10 +115,50 @@ span{
 
 #btnClose{
     width: 50px;
+    border-color: rgb(255, 0, 0);
 }
-
-#btnEdit{
-    background-color: rgb(25, 190, 25);
+#btnPromedio
+{
+    background-color: rgb(55, 235, 226);
+    width: 8%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    padding: 0.8rem 0.8rem;
+    font-weight: 500;
+    color: white; 
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0.3rem 0px rgb(59, 59, 59);
+}
+#btnBuscar
+{
+    background-color: rgb(55, 235, 226);
+    width: 8%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    padding: 0.8rem 0.8rem;
+    font-weight: 500;
+    
+}
+#btnAlta
+{
+    position: fixed;
+    background-image:url(./img/abrir.png);
+    background-position: center;
+    border-radius: 50%;
+    height: 66px;
+    width: 66px;
+    background-color: rgb(141, 103, 97);
+    border: none;
+    box-shadow: 0.4rem 0.4rem rgb(146, 182, 184);
+    cursor: pointer;
+    top: 0%;
+    right: 1%;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .inputError{
@@ -166,6 +223,21 @@ body.disabled:before {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+input[type=button]
+{
+    width: 48%;
+    background-color: rgb(187, 65, 65);
+    color: white;
+    padding: 0.875rem 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0.3rem 0px rgb(59, 59, 59);
+}
+input[type=button]:hover
+{
+    background-color: rgb(151, 111, 104);
 }
 
 /*
